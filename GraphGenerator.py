@@ -41,6 +41,27 @@ def make_k33_graph():
     return k33
 
 
+def make_k5_graph():
+    """
+    Makes a K(5) graph, which is a complete graph with 5 nodes.
+    Visual layout is automatically generated.
+
+    Returns:
+        networkx.Graph: A K(5) graph
+    """
+    k5 = nx.complete_graph(5)
+
+    # Specify a circular layout and apply it
+    pos = nx.circular_layout(k5)
+    k5.add_nodes_from(pos.keys())
+
+    # Assign node positions to graph
+    for n, p in pos.iteritems():
+        k5.node[n]['pos'] = p
+
+    return k5
+
+
 def make_planar_graph():
     """
     Makes a graph that is guaranteed to be planar. In this case, we just generate K(4).

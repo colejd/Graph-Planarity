@@ -35,7 +35,7 @@ def main():
     solve_graph(k33, "k33")
 
     # K(5) graph
-    k5 = nx.complete_graph(5)
+    k5 = GraphGenerator.make_k5_graph()
     solve_graph(k5, "k5")
 
     # Guaranteed planar graph
@@ -48,7 +48,7 @@ def main():
 
 def solve_random_graph(num_nodes, probability, name):
     """
-    Runs a planarity test on an arbitrary graph.
+    Runs a planarity test on an arbitrary graph. See
 
     Args:
         num_nodes (int): The number of nodes in the generated graph
