@@ -12,10 +12,12 @@ Dependencies:
 To install these dependencies, run:
 
 ```
-pip install —user pydot
-pip install —user networkx
-pip install —user graphviz
+pip install --user pydot
+pip install --user networkx
+pip install --user graphviz
 ```
+Note: You don't need the --user flag for typical installation, but you'll need it if you're 
+running El Capitan because Apple is just full of good ideas lately.
 
 To run this program, execute 
 `python Main.py`
