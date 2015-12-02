@@ -51,13 +51,14 @@ def make_k5_graph():
     """
     k5 = nx.complete_graph(5)
 
-    # Specify a circular layout and apply it
+    # Specify a circular layout and apply it to the graph
+    """
     pos = nx.circular_layout(k5)
     k5.add_nodes_from(pos.keys())
-
     # Assign node positions to graph
     for n, p in pos.iteritems():
         k5.node[n]['pos'] = p
+    """
 
     return k5
 
