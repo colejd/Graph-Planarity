@@ -1,7 +1,7 @@
 # coding=utf-8
 """
 GraphGenerator
-========
+=================
 
 GraphGenerator provides functions that generate NetworkX graphs in particular
 configurations that are not pre-supplied by NetworkX.
@@ -18,7 +18,8 @@ def make_k33_graph():
     Makes a K(3, 3) graph, also known as the Utility Graph. Consists of two sets of 3
     nodes, where each node in the first set is connected to each node of the second.
 
-    :return: A networkx graph object representing K(3, 3)
+    Returns:
+        networkx.Graph: A K(3, 3) graph
     """
 
     k33 = nx.Graph()
@@ -43,8 +44,10 @@ def make_k33_graph():
 def make_planar_graph():
     """
     Makes a graph that is guaranteed to be planar. In this case, we just generate K(4).
+    Alternately we can generate K(5) and remove an edge.
 
-    :return: A networkx graph object representing K(4)
+    Returns:
+        networkx.Graph: A graph object representing K(4)
     """
 
     p_graph = nx.complete_graph(4)

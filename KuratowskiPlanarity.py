@@ -1,7 +1,7 @@
 # coding=utf-8
 """
 KuratowskiPlanarity
-========
+====================
 
 Provides a brute-force method for testing the planarity of a networkx graph object
 using Wagner's theorem. That is, if a graph does not contain any subgraphs
@@ -25,11 +25,13 @@ import GraphUtils
 
 def find_planarity(graph):
     """
-    Searches :param graph: for any subgraphs homeomorphic to K(3, 3) or K(5).
+    Searches *graph* for any subgraphs isomorphic to K(3, 3) or K(5).
 
-    :param graph: The graph to be searched
-    :return:    planarity (boolean),
-                bad_graph (invalid subgraph or None)
+    Args:
+        graph (networkx.Graph): The graph to be searched
+
+    Returns:
+        bool, networkx.Graph: Planarity of the graph and either None or the detected Kuratowski graph
     """
 
     planar = True

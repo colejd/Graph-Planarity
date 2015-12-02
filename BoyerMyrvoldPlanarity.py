@@ -1,7 +1,7 @@
 # coding=utf-8
 """
 BoyerMyrvoldPlanarity
-========
+========================
 
 Provides an implementation of Boyer and Myrvold's linear-time planarity testing algorithm.
 Fun fact: The only information I can find on implementations of any of these algorithms is

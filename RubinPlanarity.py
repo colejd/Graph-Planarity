@@ -1,7 +1,7 @@
 # coding=utf-8
 """
 RubinPlanarity
-========
+================
 
 Provides an implementation of Rubin's linear-time planarity testing algorithm.
 """

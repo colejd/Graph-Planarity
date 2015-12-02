@@ -50,10 +50,13 @@ def solve_random_graph(num_nodes, probability, name):
     """
     Runs a planarity test on an arbitrary graph.
 
-    :param num_nodes: (int) The number of nodes in the generated graph
-    :param probability: (float) The probability that a generated node will generate an edge
-    :param name: (string) The name of the graph
-    :return: (bool) Planarity of the graph
+    Args:
+        num_nodes (int): The number of nodes in the generated graph
+        probability (float): The probability that a generated node will generate an edge
+        name (str): The name of the graph
+
+    Returns:
+        planarity (bool): Planarity of the graph
     """
 
     graph = nx.fast_gnp_random_graph(num_nodes, probability)
@@ -65,9 +68,12 @@ def solve_graph(graph, name):
     """
     Runs a planarity test on a predefined graph.
 
-    :param graph: (graph) Input graph
-    :param name: (string) The name of the graph
-    :return: (bool) Planarity of the graph
+    Args:
+        graph (networkx.Graph): Input graph
+        name (str): The name of the graph
+
+    Returns:
+        planarity (bool): Planarity of the graph
     """
 
     # graph_nodes = len(graph.nodes())

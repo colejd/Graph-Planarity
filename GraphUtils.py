@@ -2,7 +2,7 @@
 
 """
 GraphUtils
-========
+===========
 
 GraphUtils provides miscellaneous functions for testing graph properties
 that NetworkX does not provide, as well as convenient functions for
@@ -23,12 +23,12 @@ def draw_graph(graph, title, bad_graph, subtitle=None, use_labels=True):
     """
     Writes the graph data to an image with the properties specified.
 
-    :param graph: Input graph
-    :param title: Name of the image
-    :param bad_graph: (graph or None) Graph representing invalid subgraph in input, will be highlighted in red
-    :param subtitle: [optional]  String used in image heading
-    :param use_labels: [optional] Draw node labels in output image
-    :return:
+    Args:
+        graph (networkx.Graph): Input graph
+        title (str): Name of the image
+        bad_graph (networkx.Graph): Graph representing invalid subgraph in input, will be highlighted in red
+        subtitle (str): String used in image heading [optional]
+        use_labels (bool): Draw node labels in output image [optional]
     """
 
     plt.figure(figsize=(8, 8))
@@ -75,10 +75,13 @@ def draw_graph(graph, title, bad_graph, subtitle=None, use_labels=True):
 
 def check_completeness(graph):
     """
-    Examines the input graph for completeness.
+    Examines *graph* for completeness.
 
-    :param graph: The input graph
-    :return: (boolean) completeness
+    Args:
+        graph (networkx.Graph): The graph to be examined
+
+    Returns:
+        is_complete (bool): Completeness of the graph
     """
 
     graph_nodes = len(graph.nodes())
@@ -92,7 +95,8 @@ def check_completeness(graph):
 
 def timeit(func):
     """
-    Decorator function to add timing output to a method.
+    Decorator function to add timing output to a method. When the decorated method is run,
+    elapsed time will be printed to the console.
 
     To use, import GraphUtils and add the @GraphUtils.timeit decorator
     above a method declaration.

@@ -1,7 +1,7 @@
 # coding=utf-8
 """
 FouldsRobinsonPlanarity
-========
+=========================
 
 Provides an implementation of... something
 """

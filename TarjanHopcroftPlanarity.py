@@ -1,7 +1,7 @@
 # coding=utf-8
 """
 TarjanHopcroftPlanarity
-========
+==========================
 
 Provides an implementation of Hopcroft and Tarjan's linear-time planarity checking algorithm.
 """
