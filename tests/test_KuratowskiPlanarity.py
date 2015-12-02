@@ -41,7 +41,7 @@ class TestFunctions(unittest.TestCase):
     # Generates a K(5) subgraph and attempts to detect it with the algorithm.
     def testK5(self):
         # Generate K(5) graph
-        k5 = nx.complete_graph(5)
+        k5 = GraphGenerator.make_k5_graph()
 
         # Test graph
         planar, bad_graph = KuratowskiPlanarity.find_planarity(k5)
