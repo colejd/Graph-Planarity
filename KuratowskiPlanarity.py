@@ -26,6 +26,7 @@ import GraphUtils
 def find_planarity(graph):
     """
     Searches :param graph: for any subgraphs homeomorphic to K(3, 3) or K(5).
+
     :param graph: The graph to be searched
     :return:    planarity (boolean),
                 bad_graph (invalid subgraph or None)

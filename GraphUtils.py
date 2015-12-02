@@ -98,12 +98,11 @@ def timeit(func):
     above a method declaration.
     """
     @functools.wraps(func)
-
     def newfunc(*args, **kwargs):
-        startTime = time.time()
+        start_time = time.time()
         func(*args, **kwargs)
-        elapsedTime = time.time() - startTime
-        print('function [{}] finished in {} ms'.format(
-            func.func_name, int(elapsedTime * 1000)))
+        elapsed_time = time.time() - start_time
+        print('TimeIt: Function [{}] finished in {} ms'.format(
+            func.func_name, int(elapsed_time * 1000)))
     return newfunc
 

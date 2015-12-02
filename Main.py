@@ -46,7 +46,6 @@ def main():
     plt.show()
 
 
-# Runs the algorithm on an arbitrary subgraph.
 def solve_random_graph(num_nodes, probability, name):
     """
     Runs a planarity test on an arbitrary graph.
