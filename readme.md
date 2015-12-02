@@ -1,5 +1,4 @@
 # Graph Planarity Algorithms
-================================
 
 This is a program that generates graphs and runs various tests for planarity on them. Written with Python 2.7.
 
