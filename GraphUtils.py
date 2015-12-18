@@ -110,3 +110,6 @@ def timeit(func):
             func.func_name, int(elapsed_time * 1000)))
     return newfunc
 
+
+def format_commas(string):
+    return "{:,}".format(string)
