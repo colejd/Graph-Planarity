@@ -11,7 +11,7 @@ Planned algorithms:
 * Hopcroft and Tarjan's path addition algorithm
 
 
-###Installation
+### Installation
 You'll need the following Python modules installed on your machine:
 
 * networkx
@@ -30,7 +30,7 @@ Note: You don't need the ```--user``` flag for typical installation, but you'll 
 running El Capitan; pip won't be able to get proper permissions to install due to SIP otherwise.
 
 
-###Running the program
+### Running the program
 To run this program, execute
 `python Main.py`
 in the command line.
